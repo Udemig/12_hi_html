@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  Yorum Satırı:   
+    Yorum satıları dosyanın kaydedildiği zaman derlenmeyen yapılardır.Yani yorum satırı içerisinde yer alan kısımlar tarayıcıya yansımaz.
+
+    Yorum satıları mac'lerde 'command + k + c 'windoslarda 'ctrl + k + c ' tuş kombinasyonu ile oluşturulur.
+    -->
+
+    <!-- * Html Yapıları  -->
+
+    <!-- Html kodları etiketler kullanaılarak oluşturulur.Html de farklı yapılar için özelleştirilmiş etiketler mevcuttur.  -->
+
+    <!-- ? Html Başlık (heading) Etiketi [h1--h6] -->
+
+    <!-- Html başlık etiketleri h1,h2,h3,h4,h5,h6 şeklindedir.Buradaki etiketlerden h1 en büyük yazıma sahipken h6 en küçük yazıma sahiptir. -->
+
+    <h1>Udemig Akademi-h1</h1>
+    <h2>Udemig Akademi-h2</h2>
+    <h3>Udemig Akademi-h3</h3>
+    <h4>Udemig Akademi-h4</h4>
+    <h5>Udemig Akademi-h5</h5>
+    <h6>Udemig Akademi-h6</h6>
+
+    <!-- ? Html Paragraf (Paragrafh) Etiketi [p] -->
+
+    <!-- Html de paragraflar oluşturmak için p etiketi kullanılır. -->
+
+    <p>Udemig akademi Html dersinde selamlar.</p>
+
+    <!--  ? Html Özelleştirilmiş Yazım Etiketleri -->
+
+    <!-- * b ==> Normalden kalın yazım elde etmek için kullanılır. -->
+
+    <b>Html Dersi</b>
+
+    <!-- *  br ==> Yan yana olan elemanların alt alta sıralar.Eğer alt alta olan elemanlar varsa bunların arasını 1 satır açar. -->
+
+    <br />
+
+    <!-- * i ==> İtalik yazım elde etmek için kullanılır.  -->
+    <i>Html Dersi</i>
+
+    <br />
+
+    <!-- * strong ==> Hem kalın hem vurgulu yazım elde etmek için kullanılır.  -->
+
+    <strong>Html Dersi</strong>
+
+    <br />
+
+    <!-- * u ==> Altı çizili yazım elde etmek için kullanılır. -->
+
+    <u>Html Dersi</u>
+
+    <br />
+
+    <!-- * del ==> Üzeri çizili yazım elde etmek için kullanılır. -->
+
+    <del>Html Dersi</del>
+
+    <br />
+
+    <del>159.90</del>
+    <i>129.90</i>
+
+    <br />
+
+    <!-- * sup ==> Üslü yazım elde etmek için kullanılır. -->
+    <p>2<sup>2</sup> = 4 tür.</p>
+
+    <br />
+
+    <!-- * sub ==> Logaritmik ifadelerde yada kimyasal formüllerdeki alt yazımı elde etmek için kullanılır. -->
+
+    <p>Halk arasında su olarak bilinen maddenin formülü H<sub>2</sub>O 'dur.</p>
+
+    <br />
+
+    <!-- * small ==> Normalden küçük yazım elde etmek için kullanılır.  -->
+
+    <small>Html Dersi</small>
+
+    <br />
+    <br />
+
+    <!--  ? Html Yönlendirme Etiketi [a] -->
+
+    <!-- a etiketi Html de yönlendirme işlemleri için kullanılır.Bu etiket href attribute(özelliği) olarak aldığı siteye bizi yönlendirir.Fakat bu yönlendirmeyi aynı tarayıcı sekmesinde yapar.Bunu engellemek ve yönlendirme yapılacak sayfayı yeni bir tarayıcı sekmesinde açmak için target='_blank' attribute kullanılır.Bu sayede bu etikete tıklanınca href kısımında yer alan sayfaya bizi yönlendirir. -->
+
+    <a href="https://udemig.com/" target="_blank">Udemig'e Git</a>
+
+    <br />
+
+    <!-- ? Html Resim (Image) Etiketi -->
+
+    <!-- Html de dosyamıza resim eklemek içim img etiketi kullanılır.Bu etiket src='' kısımında bu resim kaynağını ister.Ve bu kaynağı verirken 2 farklı yöntem bulunur. -->
+    <!-- * Dosya yoluyla resim ekleme -->
+    <img
+      src="https://i.pinimg.com/236x/17/f8/1e/17f81ec7203b785f31414948a451e731.jpg"
+      alt="kedi-resim"
+    />
+
+    <!-- * Lokalimizde bulunan bir resimi ekleme -->
+
+    <img src="./manzara.jpeg" alt="manzara-resim" />
+
+    <!-- * img etiketi içerisinde bulunan alt='' resimin yüklenmemesi,bağlantının bozuk olması gibi durumlarda kullanıcıya bilgilendirme yapar.Ayrıca bu etiket web kurallarına uyarak sitemizin  aramalarda daha yukarılarda çıkmasını sağlar.   -->
+
+    <!-- todo: İnternetten istediğiniz bir resimi dosyanıza indiriniz.Sonrasında bu resimi Html dosyasına ekleyerek bunu tarayıcıda görüntüleyiniz. -->
+
+    <!-- ? Html sayfa içerisinde sayfa görüntüleme -->
+
+    <!-- * iframe ==> Html sayfası içerisine başka bir sayfayı eklemek için kullanılır.Bu etiket src='' attribute ile hangi sayfayı eklemek istiyorsak bunu belirtmemizi ister.  -->
+
+    <iframe
+      src="https://udemig.com/"
+      width="500"
+      height="500"
+      frameborder="0"
+    ></iframe>
+
+    <!-- ? Html Liste (List) Yapısı -->
+
+    <!-- Html de listeleme yaparken 2 yöntem vardır.  -->
+
+    <!-- * 1-) Düzenli Listeleme (Ordered List) -->
+    <ol>
+      <li>Html</li>
+      <li>Css</li>
+      <li>Bootstrap</li>
+      <li>Scss</li>
+      <li>Javascipt</li>
+    </ol>
+
+    <!-- * 2-) Düzensiz Listeleme (Unordered List) -->
+
+    <ul>
+      <li>Html</li>
+      <li>Css</li>
+      <li>Bootstrap</li>
+      <li>Scss</li>
+      <li>Javascipt</li>
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- ? Html Tablo (Table) Yapısı -->
+
+    <!-- Html de tablo yapıları 'table' etiketi ile oluşturulur. -->
+    <table border="1">
+      <!-- Bir satır oluşturduk -->
+      <tr>
+        <!-- Bu satırın içerisindeki sütunları oluşturduk -->
+        <td>İd:</td>
+        <td>İsim:</td>
+        <td>Soyisim:</td>
+        <td>Numara:</td>
+        <td>Not:</td>
+      </tr>
+      <tr>
+        <td>Pazartesi</td>
+        <td>Fatmanur</td>
+        <td>Çağlar:</td>
+        <td>2344</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Salı</td>
+        <td>Fatmanur</td>
+        <td>Çağlar:</td>
+        <td>2344</td>
+        <td>100</td>
+      </tr>
+    </table>
+    <br /><br /><br /><br /><br />
+
+    <!-- ? Html Form Yapısı  -->
+
+    <form>
+      <label>İsim:</label>
+      <br />
+      <input type="text" placeholder="isim giriniz ..." />
+      <br /><br />
+      <label>Soyisim:</label>
+      <br />
+      <input type="text" />
+      <br /><br />
+      <label>Yaş:</label>
+      <br />
+      <input type="number" />
+      <br /><br />
+      <label>Doğum Tarihi:</label>
+      <br />
+      <input type="date" />
+      <br /><br />
+      <label>Email:</label>
+      <br />
+      <input type="email" />
+      <br /><br />
+      <label>Şifre:</label>
+      <br />
+      <input type="password" />
+      <br /><br />
+      <label>Kullanıcı Ara:</label>
+      <br />
+      <input type="search" />
+      <br /><br />
+      <label>Kullanıcı Ara:</label>
+      <br />
+      <input type="search" />
+      <br /><br />
+      <label>Cinsiyet:</label>
+      <br />
+      <b>Erkek</b>
+      <input type="radio" />
+      <b>Kadın</b>
+      <input type="radio" />
+      <br /><br />
+      <b>İş deneyimizin var mı ?</b>
+      <input type="checkbox" />
+      <br /><br />
+      <textarea></textarea>
+      <br />
+      <label>Cv Yükleyiniz:</label>
+      <br />
+      <input type="file" />
+      <br /><br />
+      <button type="submit">Gönder</button>
+      <button type="reset">Sıfırla</button>
+    </form>
+    <br /><br /><br /><br /><br />
+
+    <!-- Html de form yapıları oluşturmak için form etiketi kullanılır.Form etiketi içerisinde yazı yazılabilir alanlar için input ve textarea etiketleri kullanılır.İnputlar type değerlerine göre farklı davranışlar gösterir.
+     
+    inputun type ı
+
+    text ==> Normal yazı
+
+    number ==> Sayı 
+
+    date ==> Tarih
+
+    email ==> Eposta
+
+    password ==> Şifre
+
+    radio ==> Seçilebilir alan 
+
+    checkbox ==> Seçilebilir alan 
+
+    radio ve checkbox ın farkı radio ile işaretlenen kısım sayfa yenilenene kadar geri alınamaz.Fakat checkbox da tıklanınca geri alınabilir.
+
+
+    file ==> Dosya 
+    
+    
+    placeholder ==> İnput içerisinde kullanıcıya mesaj iletmek için kullanılır.
+    -->
+  </body>
+</html>
